@@ -89,6 +89,8 @@ class CustomSketch extends CustomPainter {
 
     for (var i = 0; i < points.length; i++) {
       if (points[i] != null && points[i + 1] != null) {
+        //  canvas.drawPoints(PointMode.points, points, paint);
+
         canvas.drawLine(points[i], points[i + 1], paint);
       }
     }
